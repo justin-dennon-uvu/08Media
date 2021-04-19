@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Travel Utah</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Start wrapper -->
+    <div id="wrapper">
+      <!-- Start of the header -->
+      <header>
+        <h1>Travel UTAH</h1>
+        <h2>Explore the beehive State</h2>
+      </header>
+
+      <!-- Start of the navigation -->
+      <nav>
+        <ul>
+          <li class="button"><a href="index.html">Home</a></li>
+          <li class="button"><a href="destinations.html">Destinations</a></li>
+          <li class="button"><a href="gallery.html">Gallery</a></li>
+          <li class="button active"><a href="booking.html">Booking</a></li>
+          <li class="button"><a href="tourdates.html">Tour Dates</a></li>
+          <li class="button"><a href="location.html">Location</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+      </nav>
+
+      <!-- Start of the main content -->
+      <main>
+        <h1>Booking</h1>
+        <form
+          action="thanks.html"
+          method="POST"
+          enctype="multipart/form-data"
+          name="book"
+          class="booking"
+        >
+          <fieldset>
+            <legend>Personal Info</legend>
+            <label
+              ><span>First Name:</span
+              ><input
+                name="first"
+                value=""
+                type="text"
+                class="userinput"
+                placeholder="John"
+                required
+            /></label>
+            <label
+              ><span>Last Name:</span
+              ><input
+                name="last"
+                value=""
+                type="text"
+                class="userinput"
+                placeholder="Smith"
+                required
+            /></label>
+            <label
+              ><span>Email:</span
+              ><input
+                type="email"
+                class="userinput"
+                name="email"
+                value=""
+                placeholder="johnsmith123@domain.com"
+                required
+            /></label>
+            <label
+              ><span>Phone:</span
+              ><input
+                type="tel"
+                class="userinput"
+                name="telephone"
+                value=""
+                placeholder="123-456-7890"
+                required
+                pattern="[0-9-. ]{10,14}"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Travel Questions</legend>
+            <span>Are you traveling from in state or out of state?</span>
+            <label
+              ><input type="radio" name="from" value="instate" required />In
+              State</label
+            >
+            <label
+              ><input type="radio" name="from" value="outstate" />Out of
+              State</label
+            >
+            <span>What places are you planning on traveling to?</span>
+            <label
+              ><input type="checkbox" name="znp" value="Zion" />Zion National
+              Park</label
+            >
+            <label
+              ><input type="checkbox" name="lap" value="Lagoon" />Lagoon
+              Amusement Park</label
+            >
+            <label
+              ><input type="checkbox" name="mt" value="Timpanogos" />Mount
+              Timpanogos</label
+            >
+            <label
+              ><input type="checkbox" name="bsf" value="SaltFlats" />Bonneville
+              Salt Flats</label
+            >
+            <label
+              ><input type="checkbox" name="pc" value="ParkCity" />Park
+              City</label
+            >
+            <label
+              ><input type="checkbox" name="oth" value="Other" />Other</label
+            >
+            <span>What place are you most excited to see?</span>
+            <select name="location-choice">
+              <option value="Zion">Zion National Park</option>
+              <option value="Lagoon">Lagoon Amusement Park</option>
+              <option value="Timpanogos">Mount Timpanogos</option>
+              <option value="SaltFlats">Bonneville Salt Flats</option>
+              <option value="ParkCity">Park City</option>
+              <option value="Other">Other</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Questions, Comments and Concerns</legend>
+            <textarea name="comments"></textarea>
+          </fieldset>
+          <input type="hidden" name="website1" value="dgm2120" />
+          <input
+            type="submit"
+            name="submit"
+            value="Submit Booking Form"
+            class="submitbutton"
+          />
+        </form>
+      </main>
+
+      <!-- Start of the footer -->
+      <footer>
+        <p>&copy; 2021 &bull; Travel Utah LLC. &bull; Built by Justin Dennon</p>
+      </footer>
+
+      <!-- End wrapper -->
+    </div>
+  </body>
+</html>
